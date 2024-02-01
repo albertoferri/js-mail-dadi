@@ -1,19 +1,30 @@
 // creo un array di email
-const emails = ["test1@gmail.com", "test2@gmail.com", "test3@gmail.com", "test4@gmail.com", "test5@gmail.com", "test6@gmail.com", "test7@gmail.com",];
+const emails = ['test1@gmail.com', 'test2@gmail.com', 'test3@gmail.com', 'test4@gmail.com', 'test5@gmail.com', 'test6@gmail.com', 'test7@gmail.com',];
 
 const userMail = [prompt("Inserisci la tua email")];
 
 emails.push(userMail[0]);
 
-if (userMail ){
-    document.querySelector("#userChoice") = "va bene"
+
+let findMail = false;
+
+for (let i = 0; i < emails.length; i++) {
+    if (emails[i] === userMail) {
+        findMail = true;
+    }
+}
+if (findMail) {
+    document.getElementById("userChoice").innerHTML = "Elemento Trovato!!"
+    console.log('Elemento trovato!');
 } else {
-    alert("La tua email non è registrata.")
+    document.getElementById("userChoice").innerHTML = "Elemento NON Trovato!!"
+    console.log('Elemento non trovato.');
 }
 
-// const newElement = document.createElement("div");
 
-// if (prompt("Inserisci la tua email") === )
 
-console.log(emails);
+
+
+
+// console.log(emails);
 console.log(userMail)
