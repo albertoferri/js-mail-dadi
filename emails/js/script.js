@@ -31,4 +31,7 @@ if (userMail == ""){
     
 }
 
+// opzionale-----creo variabile per poi aggiungere immagine
+
+
 console.log(userMail)

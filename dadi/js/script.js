@@ -8,8 +8,9 @@ buttonElement.addEventListener("click",
         let numberUser = Math.round(Math.random()*5+1);
         let numberPc = Math.round(Math.random()*5+1);
 
-        document.getElementById("userResult").innerHTML = "Hai ottenuto: " + numberUser;
-        document.getElementById("pcResult").innerHTML = "Computer: " + numberPc;
+        // cambio src della img tramite querySelector
+        document.querySelector("#player img").src = `./img/${numberUser}.png`;
+        document.querySelector("#computer img").src = `./img/${numberUser}.png`;
         
         // aggiunta verifica dei valori (il più alto vince)
         if (numberUser > numberPc){

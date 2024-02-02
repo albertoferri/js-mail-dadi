@@ -12,12 +12,21 @@
 <body>
     
     
-    <div class="container mx-auto d-flex flex-wrap text-center gap-5 mt-5">
+    <div class="container mx-auto d-flex justify-content-between  flex-wrap text-center gap-5 mt-5">
         <h1 class="m-3 w-100">GIOCO DEI DADI</h1>
         <input class="btn btn-outline-warning m-3 fw-bold" id="button" type="button" value="TIRA I DADI">
-        <p class="fw-bold text-danger m-3 " id="userResult"></p>
-        <p class="fw-bold text-danger m-3 " id="pcResult"></p>
-        <p class="fw-bold text-primary m-3 " id="winner"></p>
+
+        <div id="player">
+            <span class="fw-bold text-danger m-3 " id="userResult"></span>
+            <img src="" alt="">
+        </div>
+
+        <div id="computer">
+            <span class="fw-bold text-danger m-3 " id="pcResult"></span>
+            <img src="" alt="">
+        </div>
+        
+        <span class="fw-bold text-primary m-3 w-100" id="winner"></span>
     </div>
 
     <script src="js/script.js"></script>
